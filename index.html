@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo HTML com DIO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+
+<body>
+
+
+    <header>
+
+        <h1 id="inicio">Aprendendo <span> HTML</span> com <img src="img/logo-full.webp" alt="imagem logo da DIO"
+                width="100"></h1>
+
+
+
+        <nav>
+            <ul>
+
+                <li><a href="#html"> <i>HTML</i></a></li>
+                <li><a href="#tags"><i>Tags</i></a></li>
+                <li><a href="#formulario">Formulario</a></li>
+                <li><a href="#iframe">Iframe</a></li>
+                <li><a href="#footer">Links</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+
+        <h2 id="html">A Estrutura básica do <strong> <abbr title="HyperText Markup Language">HTML</abbr></strong></h2>
+
+        <div class="estrtura-html">
+        <p>
+
+            <strong> <a href="https://www.w3schools.com/html/html_head.asp" target="_blank" class="link">Head</a>
+            </strong> esta
+            seção contém informações sobre a página que não são visíveis para o usuário. É aqui que
+            você define o título da página, que aparece na aba do navegador, e inclui links para arquivos <strong><a
+                    href="https://www.w3schools.com/css/css_intro.asp" target="_blank"> <abbr
+                        title="Cascading Style Sheets" class="link">CSS</abbr></a> </strong> (estilo) e
+            <strong><a href="https://www.w3schools.com/js/js_intro.asp" target="_blank"
+                    class="link">JavaScript</a></strong>
+            (interatividade).
+            <br>
+
+            <strong>Body</strong> esta é a parte principal do documento. Todo o conteúdo visível da sua página
+            <mark>(textos,
+                imagens, links, botões)</mark> fica dentro desta tag. É o corpo do site que o usuário realmente vê e
+            interage.
+        </p>
+
+        </div>
+
+        <h2 id="tags">Tags</h2>
+
+
+        <div class="tag">
+            <h3>Tag ("P") <sup><small><a href="#inicio">Inicio</a></small></sup></h3>
+            <p>
+                A tag <strong>P</strong> em HTML é usada para definir um parágrafo. É um dos elementos mais fundamentais
+                para estruturar o conteúdo textual em uma página web. Os navegadores adicionam automaticamente um espaço
+                (margem) antes e depois de cada elemento <strong>P</strong> para separar os parágrafos visualmente.
+            </p>
+        </div>
+
+        <div class="tag">
+            <h3>Tag ("A") <sup><small><a href="#inicio">Inicio</a></small></sup></h3>
+
+
+
+            <h4> Definição e uso</h4>
+            <p>
+
+                A tag define um hiperlink, que é usado para vincular de uma página a outra. <strong>a</strong>
+
+                O atributo mais importante do elemento é o atributo, que indica o destino do link. <a
+                    href="https://www.w3schools.com/tags/tag_a.asp" target="_blank" rel="noopener noreferrer"></a> href
+
+                Por padrão, os links aparecerão da seguinte forma em todos os navegadores:
+
+
+            <blockquote cite="https://www.w3schools.com/tags/tag_a.asp" target="_blank">
+                <ul>
+                    <li> Um link não visitado está <font color="blue"><u>sublinhado</u> </font> e azul</li>
+                    <li>Um link visitado está <font color="blueviolet"> <u>sublinhado</u></font> e roxo</li>
+                    <li>Um link ativo está <font color="red"><u>sublinhado</u> </font>e vermelho</li>
+                </ul>
+
+            </blockquote>
+
+
+
+
+            </p>
+        </div>
+
+        <div class="tag">
+
+            <h3>Tag ("input") <sup><small><a href="#inicio">Inicio</a></small></sup> </h3>
+
+            <p>
+                O elemento <strong><a href="https://www.w3schools.com/tags/tag_input.asp"
+                        target="_blank">Input</a></strong>
+                em HTML é usado para criar campos interativos em formulários, permitindo
+                que os usuários insiram dados. Ele é extremamente versátil e seu comportamento varia de acordo com o
+                valor
+                do atributo <strong>type</strong>.
+            </p>
+
+            <h4>Principais Tipos de Input</h4>
+            <p>
+            <ol>
+                <li><strong>type="text"</strong>: Campo de texto simples.</li>
+                <li> <strong>type="password"</strong>: Campo para senhas (oculta os caracteres digitados).</li>
+                <li> <strong>type="email":</strong> Campo para e-mails (valida formato de e-mail).</li>
+            </ol>
+            </p>
+
+        </div>
+
+        <div class="tag">
+
+            <h3>Tag ("img") <sup><small><a href="#inicio">Inicio</a></small></sup></h3>
+
+
+            <p>
+                A tag <strong><a href="https://www.w3schools.com/tags/tag_img.asp" target="_blank"
+                        rel="noopener noreferrer">img</a></strong> em HTML é usada
+                para incorporar imagens em uma página web. Ela é um elemento vazio, ou seja, não possui uma tag de
+                fechamento, e requer atributos para funcionar corretamente
+            </p>
+
+            <h4>
+                Principais atributos
+            </h4>
+
+            <ol>
+                <li><strong>src (source):</strong> Define o caminho ou URL da imagem.</li>
+
+                <ul>
+                    <li>Exemplo: src="imagens/foto.jpg"
+                    </li>
+                </ul>
+
+                <li>
+                    <strong>alt</strong> (alternative text): Fornece uma descrição da imagem, usada para acessibilidade
+                    e
+                    como texto alternativo caso a imagem não carregue.
+
+                </li>
+                <ul>
+                    <li>Exemplo: alt="Paisagem de montanha"</li>
+                </ul>
+
+                <li>
+                    <strong>width</strong> e <strong>height</strong>: Especificam a largura e altura da imagem (em
+                    pixels ou
+                    porcentagem).
+                </li>
+                <ul>
+                    <li>Exemplo: width="300" height="200"</li>
+                </ul>
+
+                <li>
+                    <strong>title</strong>: Adiciona um texto que aparece como dica ao passar o mouse sobre a imagem
+                </li>
+
+                <ul>
+                    <li>Exemplo: title="Descrição adicional"</li>
+                </ul>
+            </ol>
+
+        </div>
+
+        <div class="tag">
+
+            <h3>Tag font <sup><small><a href="#inicio">Inicio</a></small></sup></h3>
+
+
+            <h4>A tag font no HTML</h4>
+            <p>
+                A tag <strong><del>font </del></strong>era usada em versões antigas do HTML (como HTML 4) para alterar a
+                aparência do texto, permitindo modificar cor, tamanho e tipo de fonte. No entanto, ela foi descontinuada
+                no
+                HTML5 e não é mais recomendada para uso, pois o HTML moderno utiliza CSS para estilização.
+
+            </p>
+        </div>
+
+        <div class="tag">
+            <h2 id="formulario"> Formulario <sup><small><a href="#inicio">Inicio</a></small></sup></h2>
+
+            <p>
+                Para fazer um formulario é preciso de uma tag chamada <strong>form</strong>. A tag <strong>form</strong>
+                em
+                HTML é usada para criar formulários que permitem a entrada de dados pelo usuário. Esses dados podem ser
+                enviados para um servidor para processamento.
+            </p>
+
+            <h4>
+                Exemplo de Formulario
+            </h4>
+            <div class="formulario">
+                <h3>Login</h3>
+
+                <form method="post">
+
+
+                    <label for="itexto">Nome
+
+                        <input type="text" name="texto" id="itexto" placeholder="Nome completo" required>
+                    </label>
+
+                    <label for="iemail">E-mail
+                        <input type="email" name="email" id="iemail" placeholder="E-mail" required>
+                    </label>
+                    <label for="isenha">Senha
+                        <input type="password" name="senhas" id="isenha" placeholder="Senha">
+                    </label>
+
+                    <button class="botao" type="submit">Enviar</button>
+                </form>
+
+            </div>
+
+
+        </div>
+
+        <div class="tag">
+
+            <h2 id="iframe">Iframe <sup><small><a href="#inicio">Inicio</a></small></sup></h2>
+
+            <div class="iframe">
+                <P>
+                    O elemento <strong><i><a href="https://www.w3schools.com/html/html_iframe.asp"
+                                target="_blank">Iframe</a></i></strong> em HTML é usado para incorporar outra página
+                    <sup><abbr title="HyperText Markup Language">HTML</abbr></sup> dentro de uma página atual. Ele cria
+                    um "frame"
+                    embutido que pode exibir conteúdo de outra <strong><sub>URL</sub></strong> ou documento.
+                </P>
+
+                <div class="img-notebook">
+                    <img src="img/macbook-pro-5351705_640.png" alt="">
+
+
+
+                    <iframe id="ytc8" frameborder="0" allowfullscreen=""
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" title="Aula 06   Tag iframe~1" width="500px"
+                        height="400px"
+                        src="https://www.youtube.com/embed/Vjo_a4ctKvo?controls=0&amp;disablekb=1&amp;enablejsapi=1&amp;fs=0&amp;iv_load_policy=3&amp;modestbranding=1&amp;showinfo=0&amp;rel=0&amp;html5=1&amp;cc_load_policy=0&amp;origin=https%3A%2F%2Fweb.dio.me&amp;widgetid=1&amp;forigin=https%3A%2F%2Fweb.dio.me%2Ftrack%2Fsantander-2025-front-end%2Fcourse%2Ftrabalhando-com-midias%2Flearning%2Fb51e1f8f-ecda-4c11-a93c-2b3ba61d48e2%3Fautoplay%3D1&amp;aoriginsup=1&amp;vf=6"
+                        data-gtm-yt-inspected-21="true" data-gtm-yt-inspected-27="true"></iframe>
+
+
+
+                </div>
+
+
+
+
+            </div>
+    </main>
+
+
+
+    <footer id="footer">
+
+        <div class="footer-container">
+            <div class="link-referencia">
+                <h3>Link de referencia</h3>
+                <ul>
+                    <li><a href="https://www.dio.me/" target="_blank">http://dio.me</a></li>
+                    <li><a href="https://www.w3schools.com/" target="_blank">http://w3c.org</a></li>
+                </ul>
+            </div>
+
+            <div class="linksRapidos">
+                <h6>Link rápido</h6>
+                <i><a href="#inicio">Inicio</a></i>
+                <i><a href="#html">Html</a></i>
+                <i><a href="#tags">Tags</a></i>
+                <i><a href="#formulario">Formulario</a></i>
+                <i><a href="#iframe">Iframe</a></i>
+
+
+            </div>
+
+        </div>
+
+
+
+
+    </footer>
+
+</body>
+
+</html>
